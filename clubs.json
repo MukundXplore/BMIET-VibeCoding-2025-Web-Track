@@ -1,0 +1,52 @@
+[
+  {
+    "id": "c1",
+    "title": "Coding Club",
+    "desc": "For programmers, hackathons, and weekly coding challenges. All skill levels are welcome."
+  },
+  {
+    "id": "c2",
+    "title": "Web Club",
+    "desc": "Dedicated to web development, modern frameworks, accessibility, and creative design."
+  },
+  {
+    "id": "c3",
+    "title": "Robotics Club",
+    "desc": "Build, program, and compete with robots. Hands-on projects in automation and hardware."
+  },
+  {
+    "id": "c4",
+    "title": "UI/UX Design Circle",
+    "desc": "Focuses on user-centric design, prototyping, and creating beautiful, intuitive interfaces."
+  },
+  {
+    "id": "c5",
+    "title": "AI & Machine Learning Group",
+    "desc": "Explore the frontiers of artificial intelligence, from neural networks to data science projects."
+  },
+  {
+    "id": "c6",
+    "title": "Cybersecurity Sentinels",
+    "desc": "Learn about ethical hacking, network security, and digital forensics in a collaborative environment."
+  },
+  {
+    "id": "c7",
+    "title": "Game Development Guild",
+    "desc": "Join fellow creators to design, develop, and launch your own video games."
+  },
+  {
+    "id": "c8",
+    "title": "Entrepreneurship Hub",
+    "desc": "Connect with innovators, develop business plans, and get your startup ideas off the ground."
+  },
+  {
+    "id": "c9",
+    "title": "Photography Collective",
+    "desc": "For photographers of all levels. Join us for photo walks, workshops, and gallery showcases."
+  },
+  {
+    "id": "c10",
+    "title": "Public Speaking Society",
+    "desc": "Build confidence and master the art of oration through practice, workshops, and friendly competitions."
+  }
+]

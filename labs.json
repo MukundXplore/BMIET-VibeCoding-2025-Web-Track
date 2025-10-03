@@ -1,0 +1,52 @@
+[
+  {
+    "id": "l1",
+    "title": "AI Research Lab",
+    "desc": "Advanced research in machine learning, natural language processing, and computer vision."
+  },
+  {
+    "id": "l2",
+    "title": "Robotics & Automation Lab",
+    "desc": "Equipped for building and testing autonomous systems, drones, and robotic arms."
+  },
+  {
+    "id": "l3",
+    "title": "Web Technologies Lab",
+    "desc": "Experiment with the latest web frameworks, APIs, and serverless architectures."
+  },
+  {
+    "id": "l4",
+    "title": "Cybersecurity Operations Center",
+    "desc": "A simulated environment for network defense, threat analysis, and ethical hacking exercises."
+  },
+  {
+    "id": "l5",
+    "title": "VR/AR Development Lab",
+    "desc": "Create immersive virtual and augmented reality experiences with cutting-edge hardware."
+  },
+  {
+    "id": "l6",
+    "title": "Game Design & Development Studio",
+    "desc": "A creative space with high-performance PCs and software for building video games."
+  },
+  {
+    "id": "l7",
+    "title": "High-Performance Computing Center",
+    "desc": "Access powerful computing clusters for complex simulations and large-scale data analysis."
+  },
+  {
+    "id": "l8",
+    "title": "Digital Fabrication Lab (FabLab)",
+    "desc": "Bring your ideas to life with 3D printers, laser cutters, and other fabrication tools."
+  },
+  {
+    "id": "l9",
+    "title": "Human-Computer Interaction (HCI) Lab",
+    "desc": "Study and design the future of how people interact with technology."
+  },
+  {
+    "id": "l10",
+    "title": "Data Science & Analytics Lab",
+    "desc": "Work with large datasets and advanced analytical tools to uncover insights and trends."
+  }
+]

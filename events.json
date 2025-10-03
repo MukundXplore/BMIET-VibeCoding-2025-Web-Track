@@ -1,30 +1,72 @@
 [
   {
     "id": 1,
-    "title": "AI Study Jam",
+    "title": "Intro to Python Workshop",
     "club": "Coding Club",
-    "date": "2025-10-10",
-    "desc": "Intro to ML notebooks and datasets."
+    "date": "2025-10-13",
+    "desc": "A beginner-friendly workshop covering the fundamentals of the Python programming language."
   },
   {
     "id": 2,
-    "title": "Web Accessibility Walkthrough",
+    "title": "Web Accessibility Best Practices",
     "club": "Web Club",
-    "date": "2025-10-12",
-    "desc": "ARIA basics and keyboard testing."
+    "date": "2025-10-15",
+    "desc": "Learn how to make your websites usable for everyone, covering ARIA labels and keyboard navigation."
   },
   {
     "id": 3,
-    "title": "Robotics Lab Visit",
-    "club": "Robotics",
-    "date": "2025-10-14",
-    "desc": "See the bots and demos in action."
+    "title": "BattleBots Information Session",
+    "club": "Robotics Club",
+    "date": "2025-10-17",
+    "desc": "Join us to learn about building our next combat robot for the national competition."
   },
   {
     "id": 4,
-    "title": "Design for Developers",
-    "club": "UI/UX",
-    "date": "2025-10-16",
-    "desc": "Layout, spacing, and contrast."
+    "title": "Figma for Beginners",
+    "club": "UI/UX Design Circle",
+    "date": "2025-10-20",
+    "desc": "Get hands-on experience with the industry-standard tool for interface design and prototyping."
+  },
+  {
+    "id": 5,
+    "title": "Guest Lecture: The Future of AI",
+    "club": "AI & Machine Learning Group",
+    "date": "2025-10-22",
+    "desc": "Special guest Dr. Aris Thorne discusses the latest trends in generative AI and large language models."
+  },
+  {
+    "id": 6,
+    "title": "Capture The Flag (CTF) Kick-off",
+    "club": "Cybersecurity Sentinels",
+    "date": "2025-10-24",
+    "desc": "Team up and test your skills in our first ethical hacking competition of the semester."
+  },
+  {
+    "id": 7,
+    "title": "Global Game Jam Planning",
+    "club": "Game Development Guild",
+    "date": "2025-10-27",
+    "desc": "Brainstorm ideas and form teams for the upcoming 48-hour Global Game Jam event."
+  },
+  {
+    "id": 8,
+    "title": "Startup Pitch Night",
+    "club": "Entrepreneurship Hub",
+    "date": "2025-10-29",
+    "desc": "Present your business idea to a panel of local investors and entrepreneurs for feedback and prizes."
+  },
+  {
+    "id": 9,
+    "title": "Golden Hour Photo Walk",
+    "club": "Photography Collective",
+    "date": "2025-11-01",
+    "desc": "Join us for a relaxing walk around campus to capture beautiful shots during the golden hour."
+  },
+  {
+    "id": 10,
+    "title": "Impromptu Speaking Workshop",
+    "club": "Public Speaking Society",
+    "date": "2025-11-03",
+    "desc": "Improve your ability to think on your feet and deliver compelling arguments with minimal preparation."
   }
 ]

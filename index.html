@@ -1,52 +1,142 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Campus Hub — Starter</title>
-  <meta name="description" content="Starter pack for Vibe Coding (Web Track) — Option A: Campus Hub"/>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Campus Hub</title>
+    <meta name="description" content="Your one-stop portal for all campus activities, clubs, labs, and resources. Discover your community."/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="#">Campus Hub</a>
-    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">Menu</button>
-    <nav>
-      <ul id="navList" class="nav-list">
-        <li><a href="#clubs">Clubs</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-  <h1 class="visually-hidden">Campus Hub</h1>
-
-  <section id="events" aria-labelledby="events-title">
-    <div class="section-head">
-      <h2 id="events-title">Upcoming Events</h2>
-      <div class="controls">
-        <label for="q" class="visually-hidden">Search events</label>
-        <input id="q" type="search" placeholder="Search events or clubs">
-      </div>
+    <div class="wrap">
+        <a class="brand" href="#">Campus Hub</a>
+        <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">Menu</button>
+        <nav>
+            <ul id="navList" class="nav-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#clubs">Clubs</a></li>
+                <li><a href="#labs">Labs</a></li>
+                <li><a href="#library">Library</a></li>
+            </ul>
+        </nav>
     </div>
-    <ul id="eventList" class="card-list" aria-live="polite"></ul>
-    <p id="stats" class="stats" role="status" aria-live="polite"></p>
-  </section>
-
-  <section id="about">
-    <h2>About</h2>
-    <p>This is a small single-page site. Keep it simple and fast. Build two tiny interactions (see README).</p>
-  </section>
+</header>
+<section id="hero" class="hero">
+    <div class="slider-wrapper">
+        <div class="slider-track">
+            <div class="slide">
+                <h2>About Campus Hub</h2>
+                <p>Your one-stop portal for all campus activities, clubs, labs, and resources. Discover your community.</p>
+                <a href="#about" class="cta-button">Learn More</a>
+            </div>
+            <div class="slide">
+                <h2>Upcoming Events</h2>
+                <p>From coding jams to robotics expos, find out what's happening on campus and never miss an opportunity.</p>
+                <a href="#events" class="cta-button">View Events</a>
+            </div>
+            <div class="slide">
+                <h2>Find Your Niche</h2>
+                <p>Explore a diverse range of student-led clubs. Join a community that shares your passion and interests.</p>
+                <a href="#clubs" class="cta-button">Explore Clubs</a>
+            </div>
+            <div class="slide">
+                <h2>Innovate and Create</h2>
+                <p>Access state-of-the-art labs for AI, robotics, and web technologies. Turn your ideas into reality.</p>
+                <a href="#labs" class="cta-button">See Labs</a>
+            </div>
+            <div class="slide">
+                <h2>Knowledge at Your Fingertips</h2>
+                <p>Browse thousands of books, journals, and digital resources to support your academic journey.</p>
+                <a href="#library" class="cta-button">Visit Library</a>
+            </div>
+        </div>
+    </div>
+    <div class="slider-nav">
+        <button class="nav-button active" data-slide-to="0">About</button>
+        <button class="nav-button" data-slide-to="1">Events</button>
+        <button class="nav-button" data-slide-to="2">Clubs</button>
+        <button class="nav-button" data-slide-to="3">Labs</button>
+        <button class="nav-button" data-slide-to="4">Library</button>
+    </div>
+</section>
+<main class="container">
+    <h1 class="visually-hidden">Campus Hub</h1>
+    <section id="about" aria-labelledby="about-title" style="margin-top:48px;">
+        <div class="section-head">
+            <h2 id="about-title">About</h2>
+        </div>
+        <div class="card" style="max-width:600px;margin:auto;">
+            <h3>About Campus Hub</h3>
+            <p>
+                Campus Hub is your one-stop portal for all campus activities, clubs, labs, and resources. Stay connected, discover new opportunities, and make the most of your campus life!
+            </p>
+        </div>
+    </section>
+    <section id="events" aria-labelledby="events-title">
+        <div class="section-head">
+            <h2 id="events-title">Upcoming Events</h2>
+            <div class="controls">
+                <label for="q" class="visually-hidden">Search events</label>
+                <input id="q" type="search" placeholder="Search events or clubs...">
+            </div>
+        </div>
+        <ul id="eventList" class="card-list" aria-live="polite"></ul>
+        <p id="stats" class="stats" role="status" aria-live="polite"></p>
+    </section>
+    <section id="clubs" aria-labelledby="clubs-title" style="margin-top:48px;">
+        <div class="section-head">
+            <h2 id="clubs-title">Clubs</h2>
+            <div class="controls">
+                <label for="q-clubs" class="visually-hidden">Search clubs</label>
+                <input id="q-clubs" type="search" placeholder="Search clubs...">
+            </div>
+        </div>
+        <ul id="clubList" class="card-list">
+        </ul>
+        <p id="stats-clubs" class="stats" role="status" aria-live="polite"></p>
+    </section>
+    <section id="labs" aria-labelledby="labs-title" style="margin-top:48px;">
+        <div class="section-head">
+            <h2 id="labs-title">Labs</h2>
+            <div class="controls">
+                <label for="q-labs" class="visually-hidden">Search labs</label>
+                <input id="q-labs" type="search" placeholder="Search labs...">
+            </div>
+        </div>
+        <ul id="labList" class="card-list">
+        </ul>
+        <p id="stats-labs" class="stats" role="status" aria-live="polite"></p>
+    </section>
+    <section id="library" aria-labelledby="library-title" style="margin-top:48px;">
+        <div class="section-head">
+            <h2 id="library-title">Library</h2>
+        </div>
+        <div class="card" style="max-width:600px; margin:auto; text-align: left; line-height: 1.7;">
+  <h3>Campus Library Services</h3>
+  <p>
+    More than just books—we provide the tools you need to succeed.
+  </p>
+  <ul style="list-style: none; padding-left: 0;">
+    <li><strong>Resources:</strong> Over 2 million books, e-journals, and access to academic databases.</li>
+    <li><strong>Spaces:</strong> Silent study floors, reservable group rooms, and multimedia production labs.</li>
+    <li><strong>Services:</strong> Research assistance from expert librarians, printing & scanning, and tech support.</li>
+  </ul>
+  <p>
+    <strong>Hours:</strong> 8:00 AM – 10:00 PM (Monday – Saturday)
+  </p>
+  <p style="margin-top: 1rem;">
+    <a href="#library" style="color:var(--brand); font-weight:600;">Find Resources & Book a Study Room →</a>
+  </p>
+</div>
+    </section>
 </main>
-
 <footer class="site-footer">
-  <small>© Your Team • Vibe Coding (Web Track — Option A)</small>
+    <small>© Rheostat - Team ID: U1WIJ672 • Vibe Coding (Web Track — Option A)</small>
 </footer>
-
-<script src="script.js"></script>
+<script src="main.js"></script>
+<script src="slider.js"></script>
 </body>
 </html>
