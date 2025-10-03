@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Campus Hub — Starter</title>
+  <meta name="description" content="Starter pack for Vibe Coding (Web Track) — Option A: Campus Hub"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#">Campus Hub</a>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">Menu</button>
+    <nav>
+      <ul id="navList" class="nav-list">
+        <li><a href="#clubs">Clubs</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="visually-hidden">Campus Hub</h1>
+
+  <section id="events" aria-labelledby="events-title">
+    <div class="section-head">
+      <h2 id="events-title">Upcoming Events</h2>
+      <div class="controls">
+        <label for="q" class="visually-hidden">Search events</label>
+        <input id="q" type="search" placeholder="Search events or clubs">
+      </div>
+    </div>
+    <ul id="eventList" class="card-list" aria-live="polite"></ul>
+    <p id="stats" class="stats" role="status" aria-live="polite"></p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>This is a small single-page site. Keep it simple and fast. Build two tiny interactions (see README).</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <small>© Your Team • Vibe Coding (Web Track — Option A)</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
