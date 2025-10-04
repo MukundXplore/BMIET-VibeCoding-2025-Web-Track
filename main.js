@@ -1,4 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+  // --- DARK MODE LOGIC (NOW WITH LOCALSTORAGE) ---
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  
+  // Function to apply the saved theme
+  const applyTheme = (theme) => {
+    if (theme === 'dark') {
+      document.body.classList.add('dark-mode');
+    } else {
+      document.body.classList.remove('dark-mode');
+    }
+  };
+
+  // Check for a saved theme in localStorage when the page loads
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    applyTheme(savedTheme);
+  }
+
+  // Add click listener for the toggle button
+  if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', () => {
+      // Toggle the class on the body
+      document.body.classList.toggle('dark-mode');
+      
+      // Check the new state and save it to localStorage
+      if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.removeItem('theme'); // Or localStorage.setItem('theme', 'light');
+      }
+    });
+  }
+
   // --- Global Setup ---
   const TEXT = {
     showDetails: "Show Details",
@@ -13,17 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
   window.__DATA_CACHE__ = {};
 
   // --- Reusable List Filtering System ---
-
-  /**
-   * Creates a dynamic, filterable list from a JSON source.
-   * @param {object} config - Configuration for the list.
-   */
   function createFilterableList(config) {
     const listElement = document.getElementById(config.listId);
     const inputElement = document.getElementById(config.inputId);
     const statsElement = document.getElementById(config.statsId);
     
-    // Exit if the essential elements for this section don't exist
     if (!listElement || !inputElement) return { load: () => {} };
 
     const render = (items) => {
@@ -45,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const filteredItems = allItems.filter(item =>
         (item.title || '').toLowerCase().includes(term) ||
         (item.desc || '').toLowerCase().includes(term) ||
-        (item.club || '').toLowerCase().includes(term) // Also check 'club' for events
+        (item.club || '').toLowerCase().includes(term)
       );
       render(filteredItems);
       updateStats(filteredItems.length);
@@ -73,7 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Template Functions for Rendering Cards ---
-
   function formatDate(dateString) {
     const date = new Date(dateString);
     date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
@@ -81,10 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function eventCardTemplate(ev) {
-    const formattedDate = formatDate(ev.date);
     return `<li class="card" data-title="${ev.title}" data-desc="${ev.desc}">
         <h3>${ev.title}</h3>
-        <p>${formattedDate} • <span class="badge">${ev.club}</span></p>
+        <p>${formatDate(ev.date)} • <span class="badge">${ev.club}</span></p>
         <div class="card-details" id="details-${ev.id}">
           <p>${ev.desc}</p>
         </div>
@@ -102,7 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Initialize All Filterable Lists ---
-  
   createFilterableList({
     jsonFile: 'events.json',
     dataKey: 'events',
@@ -153,7 +178,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
-  // Event delegation for all "Show Details" buttons
   const mainContainer = document.querySelector('.container');
   if(mainContainer) {
     mainContainer.addEventListener('click', (event) => {
