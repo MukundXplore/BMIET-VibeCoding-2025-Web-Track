@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Initialize All Filterable Lists ---
   createFilterableList({
-    jsonFile: 'events.json',
+    jsonFile: 'JSON/events.json',
     dataKey: 'events',
     listId: 'eventList',
     inputId: 'q',
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }).load();
 
   createFilterableList({
-    jsonFile: 'clubs.json',
+    jsonFile: 'JSON/clubs.json',
     dataKey: 'clubs',
     listId: 'clubList',
     inputId: 'q-clubs',
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }).load();
 
   createFilterableList({
-    jsonFile: 'labs.json',
+    jsonFile: 'JSON/labs.json',
     dataKey: 'labs',
     listId: 'labList',
     inputId: 'q-labs',
