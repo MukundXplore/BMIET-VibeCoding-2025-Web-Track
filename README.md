@@ -27,19 +27,25 @@ This project is packed with features designed to create a dynamic and user-frien
 The project is organized into modular files for better maintainability.
 
 ```
-.
-├── 📄 index.html        # The main HTML structure for the single-page site.
-├── 📁 css/
-│   ├── 🎨 style.css         # Main stylesheet for layout, typography, and components.
-│   └── 🎨 darkmode.css      # Styles exclusively for the dark mode theme.
-├── 📁 js/
-│   ├── 📜 main.js         # Core logic: dark mode, content loading/filtering, navigation.
-│   └── 📜 slider.js       # All JavaScript for the hero section slider.
-├── 📁 data/
-│   ├── 📝 events.json       # Data for the "Upcoming Events" section.
-│   ├── 📝 clubs.json        # Data for the "Clubs" section.
-│   └── 📝 labs.json         # Data for the "Labs" section.
-└── 📜 NOTES.txt         # Disclosure of AI tools and assets used, as per event rules.
+BMIET-VibeCoding-2025-Web-Track/
+├── .gitattributes
+├── .gitignore
+├── 📁 CSS/
+│   ├── 🎨 darkmode.css            # Styles exclusively for the dark mode theme.
+│   └── 🎨 style.css               # Main stylesheet for layout, typography, and components.
+├── 📄 index.html                  # The main HTML structure for the single-page site.
+├── 📁 JS/
+│   ├── 📜 main.js                 # Core logic: dark mode, content loading/filtering, navigation.
+│   └── 📜 slider.js               # All JavaScript for the hero section slider.
+├── 📁 JSON/
+│   ├── 📝 clubs.json              # Data for the "Clubs" section.
+│   ├── 📝 events.json             # Data for the "Upcoming Events" section.
+│   └── 📝 labs.json               # Data for the "Labs" section.
+├── 📁 Others/
+│   ├── 📜 LICENSE
+│   ├── 📜 NOTES.txt               # Disclosure of AI tools and assets used, as per event rules.
+│   └── 📜 requiremnts.pdf
+└── 📜 README.md
 ```
 
 -----
