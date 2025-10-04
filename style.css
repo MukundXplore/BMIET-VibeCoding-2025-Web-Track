@@ -94,7 +94,13 @@
     /* --- HERO SLIDER STYLES --- */
     .slider-wrapper { max-width: 650px; margin: 0 auto; overflow: hidden; position: relative; }
     .slider-track { display: flex; transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); }
-    .slide { min-width: 100%; flex-shrink: 0; box-sizing: border-box; padding: 0 1rem; }
+    .slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 2rem; /* Adjusted padding to look better with rounded corners */
+    border-radius: var(--radius); 
+}
     .slide h2 { font-size: 3rem; font-weight: 800; color: var(--brand); margin: 0 0 1.2rem; }
     .slide p { font-size: 1.25rem; color: var(--muted); max-width: 600px; margin: 0 auto 2.5rem; min-height: 80px; }
     .slide .cta-button { background: linear-gradient(90deg, var(--brand), var(--accent3) 80%); color: #fff; padding: 0.9rem 2.4rem; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 1.15rem; box-shadow: 0 6px 28px 0 rgba(142,68,173,0.3); border: none; display: inline-block; }
@@ -374,4 +380,55 @@
 .floating-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+/* --- SLIDER BACKGROUND IMAGES & OVERLAY --- */
+
+/* Base styles for all slides with a background image */
+.slide {
+  position: relative; /* Required for the overlay */
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--radius);
+  padding: 2rem;
+  z-index: 1; /* Ensures content is above the overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The dark overlay to dim the background image */
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: -1; /* Place overlay behind the content */
+}
+
+/* Make text white and add a shadow for readability */
+.slide h2,
+.slide p {
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Unique background image for each slide */
+.slide-about {
+  background-image: url('https://images.unsplash.com/photo-1562774053-701939374585?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw5NjA2fDB8MXxjb2xsZWN0aW9ufDF8MjY3NDI2Mnx8fHx8Mnx8MTY4MDUxNTY3NA&ixlib=rb-4.0.3&q=80&w=1080');
+}
+.slide-events {
+  background-image: url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw5NjA2fDB8MXxjb2xsZWN0aW9ufDF8MTc5NTM3Nnx8fHx8Mnx8MTY4MDUxNTQ4Ng&ixlib=rb-4.0.3&q=80&w=1080');
+}
+.slide-clubs {
+  background-image: url('https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw5NjA2fDB8MXxjb2xsZWN0aW9ufDF8MzExNDI4Mnx8fHx8Mnx8MTY4MDUxNjMyMQ&ixlib=rb-4.0.3&q=80&w=1080');
+}
+.slide-labs {
+  background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1080&q=80');
+}
+.slide-library {
+  background-image: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=Mnw5NjA2fDB8MXxjb2xsZWN0aW9ufDF8MTc5OTM2Mnx8fHx8Mnx8MTY4MDUxNTQ1Ng&ixlib=rb-4.0.3&q=80&w=1080');
 }

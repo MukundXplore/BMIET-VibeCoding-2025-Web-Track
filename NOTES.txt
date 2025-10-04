@@ -1,0 +1,35 @@
+NOTES.txt
+--------------------------------------------------
+
+This file discloses the use of AI tools and third-party assets as required by the Vibe Coding Web Track event rules.
+
+## AI Tools Used
+
+### 1. Google Gemini Pro 2.5
+
+Gemini was used as a primary assistant for development, including:
+- Generating foundational CSS styles and layout ideas.
+- Building the interactive hero section slider component (HTML, CSS, and JavaScript).
+- Creating the card-based layouts for content sections.
+- Generating the placeholder JSON data (10+ entries each) for events, clubs, and labs.
+- Refactoring the project from a single HTML file into modular JS and JSON files.
+- Implementing the "scroll to top" floating action button, including its show/hide logic.
+
+### 2. GitHub Copilot
+
+Copilot was used for in-editor assistance, including:
+- Minor code improvements, auto-completion, and enhancing code readability.
+- Debugging the responsive navigation menu ("context menu dropdown fix").
+- Fixing issues with the sticky header, such as the content overlap ("overlay lapping").
+- General assistance with responsive styling adjustments across the page.
+
+## Assets Used
+
+### 1. Icons8 (icons8.com)
+
+- The sun and moon icons for the dark/light mode toggle were sourced from Icons8.
+- The up-arrow icon for the "scroll to top" floating button was sourced from Icons8.
+
+### 2. Unsplash (unsplash.com)
+
+- Royalty-free background images used for each slide in the hero section.
