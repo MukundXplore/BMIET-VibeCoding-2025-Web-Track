@@ -113,3 +113,7 @@ body.dark-mode .dark-mode-toggle:hover {
 .icon-sun { display: none; }
 body.dark-mode .icon-moon { display: none; }
 body.dark-mode .icon-sun { display: block; }
+
+/* --- Go to Top Button Icon Visibility (Dark Mode) --- */
+body.dark-mode .go-to-top .icon-arrow-light { display: none; }
+body.dark-mode .go-to-top .icon-arrow-dark { display: block; }

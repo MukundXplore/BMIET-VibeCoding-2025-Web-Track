@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  const scrollTopButton = document.getElementById('scrollTopButton');
+    
+    if (scrollTopButton) {
+        window.addEventListener('scroll', () => {
+            // Show button if user has scrolled down 300px
+            if (window.scrollY > 300) {
+                scrollTopButton.classList.add('visible');
+            } else {
+                scrollTopButton.classList.remove('visible');
+            }
+        });
+    }
   // --- DARK MODE LOGIC (NOW WITH LOCALSTORAGE) ---
   const darkModeToggle = document.getElementById('darkModeToggle');
   
